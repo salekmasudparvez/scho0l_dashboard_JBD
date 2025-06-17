@@ -57,6 +57,13 @@
 
     <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
 
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
     <script src="./assets/js/config.js"></script>
   </head>
 
@@ -109,25 +116,30 @@
           <div class="menu-inner-shadow"></div>
 
           <ul class="menu-inner py-1">
-            <!-- Page -->
+            <!-- Dashboard -->
             <li class="menu-item">
               <a href="index.html" class="menu-link">
-                <i class="menu-icon icon-base ti tabler-smart-home"></i>
+                <i class="menu-icon fas fa-home w-2"></i>
                 <div data-i18n="dashboard">Dashboard</div>
               </a>
             </li>
+
+            <!-- Students -->
             <li class="menu-item">
               <a href="students.html" class="menu-link">
-                <i class="menu-icon icon-base ti tabler-smart-home"></i>
+                <i class="menu-icon fas fa-user-graduate"></i>
                 <div data-i18n="students">Students</div>
               </a>
             </li>
+
+            <!-- All Classes -->
             <li class="menu-item">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
-                <i class="menu-icon icon-base ti tabler-app-window"></i>
+                <i class="menu-icon fas fa-school"></i>
                 <div data-i18n="Classes">All Classes</div>
               </a>
               <ul class="menu-sub">
+                <!-- Class 1 -->
                 <li class="menu-item">
                   <a href="javascript:void(0);" class="menu-link menu-toggle">
                     <div data-i18n="Class 1">Class 1</div>
@@ -145,6 +157,9 @@
                     </li>
                   </ul>
                 </li>
+
+                <!-- Class 2 -->
+
                 <li class="menu-item">
                   <a href="javascript:void(0);" class="menu-link menu-toggle">
                     <div data-i18n="Class 2">Class 2</div>
@@ -162,6 +177,7 @@
                     </li>
                   </ul>
                 </li>
+                <!-- Class 3 -->
                 <li class="menu-item">
                   <a href="javascript:void(0);" class="menu-link menu-toggle">
                     <div data-i18n="Class 3">Class 3</div>
@@ -179,6 +195,9 @@
                     </li>
                   </ul>
                 </li>
+                <!-- Class 10 -->
+
+                <!-- Class 4 -->
                 <li class="menu-item">
                   <a href="javascript:void(0);" class="menu-link menu-toggle">
                     <div data-i18n="Class 4">Class 4</div>
@@ -196,6 +215,8 @@
                     </li>
                   </ul>
                 </li>
+
+                <!-- Class 5 -->
                 <li class="menu-item">
                   <a href="javascript:void(0);" class="menu-link menu-toggle">
                     <div data-i18n="Class 5">Class 5</div>
@@ -213,6 +234,8 @@
                     </li>
                   </ul>
                 </li>
+
+                <!-- Class 6 -->
                 <li class="menu-item">
                   <a href="javascript:void(0);" class="menu-link menu-toggle">
                     <div data-i18n="Class 6">Class 6</div>
@@ -230,6 +253,8 @@
                     </li>
                   </ul>
                 </li>
+
+                <!-- Class 7 -->
                 <li class="menu-item">
                   <a href="javascript:void(0);" class="menu-link menu-toggle">
                     <div data-i18n="Class 7">Class 7</div>
@@ -247,6 +272,8 @@
                     </li>
                   </ul>
                 </li>
+
+                <!-- Class 8 -->
                 <li class="menu-item">
                   <a href="javascript:void(0);" class="menu-link menu-toggle">
                     <div data-i18n="Class 8">Class 8</div>
@@ -264,6 +291,8 @@
                     </li>
                   </ul>
                 </li>
+
+                <!-- Class 9 -->
                 <li class="menu-item">
                   <a href="javascript:void(0);" class="menu-link menu-toggle">
                     <div data-i18n="Class 9">Class 9</div>
@@ -281,6 +310,7 @@
                     </li>
                   </ul>
                 </li>
+                <!-- Class 10 -->
                 <li class="menu-item">
                   <a href="javascript:void(0);" class="menu-link menu-toggle">
                     <div data-i18n="Class 10">Class 10</div>
@@ -300,22 +330,86 @@
                 </li>
               </ul>
             </li>
+
+            <!-- Teachers -->
             <li class="menu-item">
               <a href="teacher.html" class="menu-link">
-                <i class="menu-icon icon-base ti tabler-smart-home"></i>
+                <i class="menu-icon fas fa-chalkboard-teacher"></i>
                 <div data-i18n="teachers">Teachers</div>
               </a>
             </li>
-            <li class="menu-item active">
-              <a href="exam_management.html" class="menu-link">
-                <i class="menu-icon icon-base ti tabler-smart-home"></i>
-                <div data-i18n="exam_management">Exam Management</div>
-              </a>
-            </li>
+
+            <!-- Exam Management -->
             <li class="menu-item">
-              <a href="admission_fees.html" class="menu-link">
-                <i class="menu-icon icon-base ti tabler-smart-home"></i>
-                <div data-i18n="Admission_fees">Admission fees</div>
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon fas fa-file-alt"></i>
+                <div data-i18n="Exam Management">Exam Management</div>
+              </a>
+              <ul class="menu-sub">
+                <!-- Exam List -->
+                <li class="menu-item active">
+                  <a href="exam_list.html" class="menu-link">
+                    <div data-i18n="Exam List">Exam List</div>
+                  </a>
+                </li>
+
+                <!-- Admit Card -->
+                <li class="menu-item">
+                  <a href="admit_card.html" class="menu-link">
+                    <div data-i18n="Admit Card">Admit Card</div>
+                  </a>
+                </li>
+
+                <!-- Seat Plan -->
+                <li class="menu-item">
+                  <a href="sit_plan.html" class="menu-link">
+                    <div data-i18n="Seat Plan">Sit Plan</div>
+                  </a>
+                </li>
+
+                <!-- Attendance Sheet -->
+                <li class="menu-item">
+                  <a href="exam_attendance.html" class="menu-link">
+                    <div data-i18n="Attendance Sheet">Attendance Sheet</div>
+                  </a>
+                </li>
+
+                <!-- Marks Section -->
+                <li class="menu-item">
+                  <a href="javascript:void(0);" class="menu-link menu-toggle">
+                    <div data-i18n="Marks">Marks</div>
+                  </a>
+                  <ul class="menu-sub">
+                    <li class="menu-item">
+                      <a href="add_mark.html" class="menu-link">
+                        <div data-i18n="Add Mark">Add Mark</div>
+                      </a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="mark_distribute.html" class="menu-link">
+                        <div data-i18n="Mark Distribute">Mark Distribute</div>
+                      </a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="marksheet.html" class="menu-link">
+                        <div data-i18n="Marksheet">Marksheet</div>
+                      </a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="tabulation_sheet.html" class="menu-link">
+                        <div data-i18n="Tabulation Sheet">Tabulation Sheet</div>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Admission Fees -->
+            <li class="menu-item">
+              <a href="fee_management.html" class="menu-link">
+                <i class="menu-icon fas fa-money-bill-wave"></i>
+                <div data-i18n="fee_management">Fee Management</div>
               </a>
             </li>
           </ul>
@@ -459,230 +553,167 @@
           <!-- / Navbar -->
 
           <!-- Content wrapper -->
-          <div class="content-wrapper">
+          <div class="content-wrapper container-p-y border-2">
             <!-- Content -->
-            <div class="container-xxl flex-grow-1 container-p-y">
-              <h4 class="py-4 mb-6">Dashboard</h4>
-              <div class="row g-6">
-                <!-- Card Border Shadow -->
-                <div class="col-lg-3 col-sm-6">
-                  <div class="card card-border-shadow-primary h-100">
-                    <div class="card-body">
-                      <div class="d-flex align-items-center mb-2">
-                        <div class="avatar me-4">
-                          <span class="avatar-initial rounded bg-label-primary">
-                            <i class="icon-base ti tabler-users icon-28px"></i>
-                          </span>
-                        </div>
-                        <h4 class="mb-0">1,250</h4>
-                      </div>
-                      <p class="mb-1">Total Students</p>
-                      <p class="mb-0">
-                        <span class="text-heading fw-medium me-2">+12.4%</span>
-                        <small class="text-body-secondary">than last year</small>
-                      </p>
+            <div class="container-xxl flex-grow-1">
+              <h4 class="py-4">Student Management</h4>
+              <div>
+                <div class="card col-lg-12">
+                  <div class="card-header border-bottom">
+                    <h5 class="card-title mb-0">All Examination</h5>
+                    <div class="d-flex justify-content-between align-items-center row pt-4 gap-4 gap-md-0">
+                      <div class="col-md-4 user_role"></div>
+                      <div class="col-md-4 user_plan"></div>
+                      <div class="col-md-4 user_status"></div>
                     </div>
                   </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                  <div class="card card-border-shadow-warning h-100">
-                    <div class="card-body">
-                      <div class="d-flex align-items-center mb-2">
-                        <div class="avatar me-4">
-                          <span class="avatar-initial rounded bg-label-warning">
-                            <i class="icon-base ti tabler-user-check icon-28px"></i>
-                          </span>
+                  <div class="card-datatable pb-5">
+                    <div id="DataTables_Table_0_wrapper" class="dt-container dt-bootstrap5 dt-empty-footer">
+                      <!-- Header Controls -->
+                      <div class="row m-3 my-0 justify-content-center text-center">
+                        <div class="col-lg-12 py-5 d-flex flex-wrap justify-content-between gap-3 align-items-center">
+                          <!-- Length selector -->
+                          <div class="dt-length">
+                            <select
+                              name="DataTables_Table_0_length"
+                              aria-controls="DataTables_Table_0"
+                              class="form-select w-auto"
+                              id="dt-length-0">
+                              <option value="10">10</option>
+                              <option value="25">25</option>
+                              <option value="50">50</option>
+                              <option value="100">100</option>
+                            </select>
+                          </div>
+
+                          <!-- Class Group Selector -->
+                          <div class="dt-length">
+                            <select id="selectpickerGroups" class="form-select w-auto" data-bs-toggle="select">
+                              <optgroup label="Class One to Eight">
+                                <option value="class_one">Class One</option>
+                                <option value="class_two">Class Two</option>
+                                <option value="class_three">Class Three</option>
+                                <option value="class_four">Class Four</option>
+                                <option value="class_five">Class Five</option>
+                                <option value="class_six">Class Six</option>
+                                <option value="class_seven">Class Seven</option>
+                                <option value="class_eight">Class Eight</option>
+                              </optgroup>
+                              <optgroup label="Class Nine">
+                                <option value="class_nine_science">Class Nine - Science</option>
+                                <option value="class_nine_commerce">Class Nine - Commerce</option>
+                                <option value="class_nine_arts">Class Nine - Arts</option>
+                              </optgroup>
+                              <optgroup label="Class Ten">
+                                <option value="class_ten_science">Class Ten - Science</option>
+                                <option value="class_ten_commerce">Class Ten - Commerce</option>
+                                <option value="class_ten_arts">Class Ten - Arts</option>
+                              </optgroup>
+                            </select>
+                          </div>
+
+                          <!-- Buttons -->
+                          <div class="dt-buttons btn-group d-flex flex-wrap gap-2">
+                            <div class="btn-group">
+                              <button class="btn btn-label-secondary dropdown-toggle waves-effect" type="button">
+                                <i class="icon-base ti tabler-upload icon-xs me-1"></i> Export
+                              </button>
+                            </div>
+                            <button
+                              class="btn add-new btn-primary waves-effect waves-light"
+                              type="button"
+                              data-bs-toggle="offcanvas"
+                              data-bs-target="#offcanvasAddStudent">
+                              <i class="icon-base ti tabler-plus icon-xs me-1"></i> Add New Exam
+                            </button>
+                          </div>
                         </div>
-                        <h4 class="mb-0">85</h4>
                       </div>
-                      <p class="mb-1">Total Teachers</p>
-                      <p class="mb-0">
-                        <span class="text-heading fw-medium me-2">+5.2%</span>
-                        <small class="text-body-secondary">than last year</small>
-                      </p>
+
+                      <!-- Table -->
+                      <div class="row justify-content-center">
+                        <div class="col-12">
+                          <div class="card shadow-none">
+                            <h5 class="card-header">Exam List</h5>
+                            <div class="table-responsive">
+                              <table class="table table-hover table-bordered w-100 text-center">
+                                <thead>
+                                  <tr>
+                                    <th>Exam Name</th>
+                                    <th>Exam Date</th>
+                                    <th>Action</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>First Term Exam</td>
+                                    <td>2025-07-10</td>
+                                    <td class="text-center">
+                                      <div class="btn-group" role="group" aria-label="Exam Actions">
+                                        <button type="button" class="btn btn-outline-secondary waves-effect">
+                                          <i class="icon-base ti tabler-eye"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-secondary waves-effect">
+                                          <i class="icon-base ti tabler-pencil"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-secondary waves-effect">
+                                          <i class="icon-base ti tabler-trash"></i>
+                                        </button>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>Final Exam</td>
+                                    <td>2025-12-15</td>
+                                    <td class="text-center">
+                                      <div class="btn-group" role="group" aria-label="Exam Actions">
+                                        <button type="button" class="btn btn-outline-secondary waves-effect">
+                                          <i class="icon-base ti tabler-eye"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-secondary waves-effect">
+                                          <i class="icon-base ti tabler-pencil"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-secondary waves-effect">
+                                          <i class="icon-base ti tabler-trash"></i>
+                                        </button>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <!-- Add more rows as needed -->
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Footer Pagination -->
+                      <div class="row mx-3 justify-content-between">
+                        <div class="col-md-auto me-auto">
+                          <div class="dt-info" role="status">Showing 1 to 2 of 2 entries</div>
+                        </div>
+                        <div class="col-md-auto ms-auto">
+                          <nav aria-label="Page navigation" class="pagination-container">
+                            <!-- Add pagination controls if needed -->
+                          </nav>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                  <div class="card card-border-shadow-danger h-100">
-                    <div class="card-body">
-                      <div class="d-flex align-items-center mb-2">
-                        <div class="avatar me-4">
-                          <span class="avatar-initial rounded bg-label-danger">
-                            <i class="icon-base ti tabler-user-cog icon-28px"></i>
-                          </span>
-                        </div>
-                        <h4 class="mb-0">45</h4>
-                      </div>
-                      <p class="mb-1">Total Staff</p>
-                      <p class="mb-0">
-                        <span class="text-heading fw-medium me-2">+3.1%</span>
-                        <small class="text-body-secondary">than last year</small>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                  <div class="card card-border-shadow-info h-100">
-                    <div class="card-body">
-                      <div class="d-flex align-items-center mb-2">
-                        <div class="avatar me-4">
-                          <span class="avatar-initial rounded bg-label-info">
-                            <i class="icon-base ti tabler-user-plus icon-28px"></i>
-                          </span>
-                        </div>
-                        <h4 class="mb-0">325</h4>
-                      </div>
-                      <p class="mb-1">New Admissions</p>
-                      <p class="mb-0">
-                        <span class="text-heading fw-medium me-2">+8.4%</span>
-                        <small class="text-body-secondary">than last year</small>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <!--/ Card Border Shadow -->
-                <!-- All Class  overview -->
-                <div class="col-xxl-12">
-                  <div class="card h-100">
-                    <div class="card-header d-flex align-items-center justify-content-between">
-                      <div class="card-title mb-0">
-                        <h5 class="m-0 me-2">Students Results Overview</h5>
-                      </div>
-                      <div class="dropdown">
-                        <button
-                          class="btn btn-text-secondary rounded-pill p-2 border-0 me-n1 waves-effect"
-                          type="button"
-                          id="resultsOverview"
-                          data-bs-toggle="dropdown"
-                          aria-haspopup="true"
-                          aria-expanded="false">
-                          <i class="icon-base ti tabler-dots-vertical icon-md text-body-secondary"></i>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="resultsOverview">
-                          <a class="dropdown-item waves-effect" href="javascript:void(0);">Select All</a>
-                          <a class="dropdown-item waves-effect" href="javascript:void(0);">Refresh</a>
-                          <a class="dropdown-item waves-effect" href="javascript:void(0);">Share</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card-body">
-                      <div class="d-none d-lg-flex results-progress-labels mb-6">
-                        <div class="results-progress-label distinction-text" style="width: 39.7%">Distinction</div>
-                        <div class="results-progress-label first-class-text" style="width: 28.3%">First Class</div>
-                        <div class="results-progress-label second-class-text" style="width: 17.4%">Second Class</div>
-                        <div class="results-progress-label pass-text text-nowrap" style="width: 14.6%">Pass</div>
-                      </div>
-                      <div
-                        class="results-overview-progress progress rounded-3 mb-3 bg-transparent overflow-hidden"
-                        style="height: 46px">
-                        <div
-                          class="progress-bar fw-medium text-start shadow-none bg-lighter text-heading px-4 rounded-0"
-                          role="progressbar"
-                          style="width: 39.7%"
-                          aria-valuenow="39.7"
-                          aria-valuemin="0"
-                          aria-valuemax="100">
-                          39.7%
-                        </div>
-                        <div
-                          class="progress-bar fw-medium text-start shadow-none bg-primary px-4"
-                          role="progressbar"
-                          style="width: 28.3%"
-                          aria-valuenow="28.3"
-                          aria-valuemin="0"
-                          aria-valuemax="100">
-                          28.3%
-                        </div>
-                        <div
-                          class="progress-bar fw-medium text-start shadow-none text-bg-info px-2 px-sm-4"
-                          role="progressbar"
-                          style="width: 17.4%"
-                          aria-valuenow="17.4"
-                          aria-valuemin="0"
-                          aria-valuemax="100">
-                          17.4%
-                        </div>
-                        <div
-                          class="progress-bar fw-medium text-start shadow-none snackbar text-paper px-1 px-sm-3 rounded-0 px-lg-4"
-                          role="progressbar"
-                          style="width: 14.6%"
-                          aria-valuenow="14.6"
-                          aria-valuemin="0"
-                          aria-valuemax="100">
-                          14.6%
-                        </div>
-                      </div>
-                      <div class="table-responsive">
-                        <table class="table card-table table-border-top-0 table-border-bottom-0">
-                          <tbody>
-                            <tr>
-                              <td class="w-50 ps-0">
-                                <div class="d-flex justify-content-start align-items-center">
-                                  <div class="me-2">
-                                    <i class="icon-base ti tabler-award icon-lg text-heading"></i>
-                                  </div>
-                                  <h6 class="mb-0 fw-normal">Distinction</h6>
-                                </div>
-                              </td>
-                              <td class="text-end pe-0 text-nowrap">
-                                <h6 class="mb-0">496 Students</h6>
-                              </td>
-                              <td class="text-end pe-0">
-                                <span>39.7%</span>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td class="w-50 ps-0">
-                                <div class="d-flex justify-content-start align-items-center">
-                                  <div class="me-2">
-                                    <i class="icon-base ti tabler-star icon-lg text-heading"></i>
-                                  </div>
-                                  <h6 class="mb-0 fw-normal">First Class</h6>
-                                </div>
-                              </td>
-                              <td class="text-end pe-0 text-nowrap">
-                                <h6 class="mb-0">354 Students</h6>
-                              </td>
-                              <td class="text-end pe-0">
-                                <span>28.3%</span>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td class="w-50 ps-0">
-                                <div class="d-flex justify-content-start align-items-center">
-                                  <div class="me-2">
-                                    <i class="icon-base ti tabler-stars icon-lg text-heading"></i>
-                                  </div>
-                                  <h6 class="mb-0 fw-normal">Second Class</h6>
-                                </div>
-                              </td>
-                              <td class="text-end pe-0 text-nowrap">
-                                <h6 class="mb-0">217 Students</h6>
-                              </td>
-                              <td class="text-end pe-0">
-                                <span>17.4%</span>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td class="w-50 ps-0">
-                                <div class="d-flex justify-content-start align-items-center">
-                                  <div class="me-2">
-                                    <i class="icon-base ti tabler-certificate icon-lg text-heading"></i>
-                                  </div>
-                                  <h6 class="mb-0 fw-normal">Pass</h6>
-                                </div>
-                              </td>
-                              <td class="text-end pe-0 text-nowrap">
-                                <h6 class="mb-0">183 Students</h6>
-                              </td>
-                              <td class="text-end pe-0">
-                                <span>14.6%</span>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
+
+                  <!-- Offcanvas to add new user -->
+                  <div
+                    class="offcanvas offcanvas-end"
+                    tabindex="-1"
+                    id="offcanvasAddStudent"
+                    aria-labelledby="offcanvasAddStudentLabel">
+                    <div class="offcanvas-header border-bottom">
+                      <h5 id="offcanvasAddStudentLabel" class="offcanvas-title">Add New Student</h5>
+                      <button
+                        type="button"
+                        class="btn-close text-reset"
+                        data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
                     </div>
                   </div>
                 </div>
@@ -700,7 +731,8 @@
                     <script>
                       document.write(new Date().getFullYear());
                     </script>
-                    , made with ❤️ by <a href="https://jbdit.com.bd/" target="_blank" class="footer-link">JBD IT</a>
+                    2025 , made with ❤️ by
+                    <a href="https://jbdit.com.bd/" target="_blank" class="footer-link">JBD IT</a>
                   </div>
                 </div>
               </div>
